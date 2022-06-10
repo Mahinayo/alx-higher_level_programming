@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     total = 0
     if isinstance(roman_string, str):
         for y in range(len(roman_string) - 1):
-            if x[roman_string[i]] >= x[roman_string[y + 1]]:
+            if x[roman_string[y]] >= x[roman_string[y + 1]]:
                 total += x[roman_string[y]]
             else:
                 total -= x[roman_string[y]]
